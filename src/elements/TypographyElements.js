@@ -72,6 +72,12 @@ export const H1 = styled.h1`
         return props.theme.colors.light1
       case "light2":
         return props.theme.colors.light2
+      case "crimson":
+        return props.theme.colors.crimson
+      case "cayan":
+        return props.theme.colors.cayan
+      case "whiteopacity":
+        return props.theme.colors.whiteopacity
       default:
         return props.theme.colors.dark1
     }

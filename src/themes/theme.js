@@ -13,6 +13,9 @@ export default {
     dark3: "hsl(227,2%,64%)",
     light1: "hsl(0,0%,97%)",
     light2: "hsl(0,0%,99%)",
+    crimson: "#d67570",
+    cayan: "#66FCF1",
+    whiteopacity: "hsl(0deg 0% 100% / 86%)"
   },
   breakpoints: {
     mobile: "only screen and (max-width: 50rem)",

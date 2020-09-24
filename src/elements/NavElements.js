@@ -27,6 +27,7 @@ export const Ul = styled.ul`
 
   li {
     padding: 18px 10px;
+    color: ${props => props.theme.colors.crimson};
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
