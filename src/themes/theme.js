@@ -1,7 +1,8 @@
+// Some styles for the theme of the page
 export default {
   fonts: {
     // main: "Muli, sans-serif",
-    main: "Anton, sans-serif",
+    main: "Vollkorn, serif",
     code: "Roboto Mono, monospace",
     headings: "Anton, sans-serif",
   },
@@ -15,7 +16,8 @@ export default {
     light2: "hsl(0,0%,99%)",
     crimson: "#d67570",
     cayan: "#66FCF1",
-    whiteopacity: "hsl(0deg 0% 100% / 86%)"
+    whiteopacity: "hsl(0deg 0% 100% / 86%)",
+    main3: "#b06d61",
   },
   breakpoints: {
     mobile: "only screen and (max-width: 50rem)",
@@ -36,5 +38,6 @@ export default {
   },
   shadows: {
     shadow1: "0px 5px 20px rgba(30, 30, 31, 0.05)",
+    shadow2: "0 4px 8px 0 rgba(214, 117, 112, 0.2), 0 6px 20px 0 rgba(214, 117, 112, 0.19)"
   },
 }

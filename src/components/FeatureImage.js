@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FeatureImageWrapper } from "../elements"
 
+// Graph ql query for my hero image, used a width value for my fixed image to make it clearer
 export const FeatureImage = ({ fixed }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,6 +15,7 @@ export const FeatureImage = ({ fixed }) => {
     }
   `)
 
+  // Return the Hero image component to the page
   return (
     <FeatureImageWrapper>
       <Img

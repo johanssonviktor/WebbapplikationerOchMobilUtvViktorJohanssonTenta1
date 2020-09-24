@@ -1,6 +1,7 @@
 import React from "react"
 import { H1, P } from "../elements"
 
+// Export the Wrapper for the heading
 export const HeadingWrapper = () => {
   return (
     <section>

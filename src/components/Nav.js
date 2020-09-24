@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import { NavWrapper } from "../elements"
+import { NavWrapper, H2 } from "../elements"
 import { Burger } from "./Burger"
 
 export const Nav = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.svg" }) {
+      logo: file(relativePath: { eq: "airplane.png" }) {
         publicURL
       }
     }
@@ -14,9 +14,10 @@ export const Nav = () => {
 
   return (
     <NavWrapper>
-      <Link to="/">
+      {/* <Link to="/">
         <img src={data.logo.publicURL} alt="My Logo" />
-      </Link>
+      </Link> */}
+      <H2 color="whiteopacity">TRAVEL<span>BLOG</span></H2>
       <Burger />
     </NavWrapper>
   )

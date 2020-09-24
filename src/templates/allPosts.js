@@ -10,6 +10,7 @@ import {
 } from "../components"
 // import { H1, P } from "../elements"
 
+// Calculates pagination
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
@@ -54,7 +55,7 @@ const allPosts = ({ pageContext, data }) => {
 }
 
 export default allPosts
-
+// Query for posts, order the post after the date they were added in a decending order.
 export const pageQuery = graphql`
   query AllPostsQuery($skip: Int!, $limit: Int!) {
     allMdx(

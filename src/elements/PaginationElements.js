@@ -8,7 +8,8 @@ export const PaginationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
+  /* change color on pagination tags depending on if its the first page or not same with cursor*/
   a:nth-child(1) {
     color: ${props =>
       props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
@@ -16,6 +17,7 @@ export const PaginationWrapper = styled.div`
     cursor: ${props => (props.isFirst ? "default" : "pointer")};
   }
 
+  /* change color on pagination tags depending on if its the last page or not same with cursor*/
   a:nth-child(2) {
     color: ${props =>
       props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
@@ -27,7 +29,7 @@ export const PaginationWrapper = styled.div`
     grid-column: 2 / span 6;
   }
 `
-
+//Style for gatsby Link component
 export const PaginationElement = styled(props => <Link {...props} />)`
   font-size: 0.875rem;
   line-height: 1.125rem;

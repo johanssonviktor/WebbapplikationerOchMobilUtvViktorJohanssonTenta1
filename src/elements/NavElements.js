@@ -6,17 +6,22 @@ export const NavWrapper = styled.nav`
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
-  border-bottom: 2px solid #f1f1f1;
-  z-index: 10;
+  padding: 0 1rem;
+  z-index: 1000;
 
-  img {
-    height: 30px;
+  span {
+    padding: 15px;
+    color: ${props => props.theme.colors.main3};
     /* padding: 15px 0; */
-    z-index: 20;
+    /* z-index: 20; */
+  }
+
+  H2 {
+    padding: 1rem;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    grid-column: 1 / span 6;
   }
 `
 
@@ -24,27 +29,33 @@ export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  font-size: 1.5rem;
+  padding: 0 4rem;
 
   li {
     padding: 18px 10px;
-    color: ${props => props.theme.colors.crimson};
+    color: ${props => props.theme.colors.whiteopacity};
   }
+
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 8;
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: ${props => props.theme.colors.main3};
     position: fixed; 
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0; 
     height: 100vh;
-    width: 300px;
+    width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 0.8;
 
     li {
       color: #fff;
+      margin: 0 auto;
     }
   }
 `

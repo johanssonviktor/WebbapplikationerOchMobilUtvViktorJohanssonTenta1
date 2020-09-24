@@ -6,6 +6,7 @@ import Theme from "./src/themes/theme"
 import { Table, Code } from "./src/components"
 import "./language-tabs.css"
 
+// Global styles for the hole page
 const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
@@ -16,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
     body, html {
         font-family: ${props => props.theme.fonts.main};
         height: 100%;
-        background-color: ${props => props.theme.colors.crimson};
+        background-color: ${props => props.theme.colors.light1};
     }
 
 `

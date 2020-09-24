@@ -10,6 +10,10 @@ export const HeroImageText = styled.section`
 
 
     @media ${props => props.theme.breakpoints.tablet} {
-        grid-column: 4;
+        grid-column: 2 / span 6;
+        H1 {
+            font-size: 2rem;
+            padding: 1rem;
+        }
     }
 `

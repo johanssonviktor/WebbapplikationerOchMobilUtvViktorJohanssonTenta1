@@ -7,6 +7,7 @@ import {
   P,
 } from "../elements"
 
+// Created a graphql query for icon images
 export const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -24,7 +25,8 @@ export const Footer = () => {
       }
     }
   `)
-
+  
+  // Return layout with styled component
   return (
     <FooterWrapper>
       <FooterSocialWrapper>
@@ -58,7 +60,7 @@ export const Footer = () => {
             <img src={data.instagram.publicURL} alt="Instagram logo" />
           </a>
         </FooterSocialIcons>
-        <P size="xSmall" color="dark3">
+        <P size="xSmall" color="whiteopacity">
           © 2020 Company. All right reserved.
         </P>
       </FooterSocialWrapper>

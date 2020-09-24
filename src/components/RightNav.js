@@ -5,9 +5,8 @@ export const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>Home</li>
-      <li>About me</li>
+      <li>About</li>
       <li>Contact</li>
-      <li>My fourth post</li>
     </Ul>
   )
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// Created multiple switch statemens for properties which i can use when i call my component
 export const P = styled.p`
   margin: ${props => (props.margin ? props.margin : 0)};
   font-size: ${props => {
@@ -50,11 +51,14 @@ export const P = styled.p`
         return props.theme.colors.light1
       case "light2":
         return props.theme.colors.light2
+      case "whiteopacity":
+        return props.theme.colors.whiteopacity
       default:
         return props.theme.colors.dark1
     }
   }};
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  font-style: italic;
 `
 
 export const H1 = styled.h1`
@@ -83,6 +87,7 @@ export const H1 = styled.h1`
     }
   }};
   font-weight: 400;
+  font-family: ${props => props.theme.fonts.headings};
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
 `
@@ -102,6 +107,8 @@ export const H2 = styled.h2`
         return props.theme.colors.light1
       case "light2":
         return props.theme.colors.light2
+      case "whiteopacity":
+        return props.theme.colors.whiteopacity
       default:
         return props.theme.colors.dark1
     }

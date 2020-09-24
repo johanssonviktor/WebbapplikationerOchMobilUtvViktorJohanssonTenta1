@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  grid-column: 2 / span 12;
+  grid-column: 1 / span 14;
   min-height: 11.25rem;
   padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-color: ${props => props.theme.colors.main3};
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    grid-column: 1 / span 8;
   }
 `
 
