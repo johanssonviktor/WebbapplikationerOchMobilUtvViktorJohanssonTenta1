@@ -24,13 +24,14 @@
     Server side pages is constructed by an application that process server side scripts.
     Client side pages processes the page with html and Javascript, and javascript can be used to update the DOM tree dynamically.
 
-    There is also possible to combine these two methods in a single project for a web application. This can be made with Javascript and AJAX or with the framework for ASP.net Blazor.
+    There is also possible to combine these two methods in a single project for a web application. This can for example be made with React, node and gatsby or with ASP.net Blazor
 
-    React is also a common choice to use for dynamical pages, and is a Javascript framework.
-
+    This project also used Gatsby which is a framework for react, and offers alot of already made plugins that you can use in your react project.
     With both react and blazor you use components to style your page. And you use componentes to render your page.
+    These components can be reused and are easy to use.
     These components can be rendered dynamically. React is a Javascript framework, and javascript is the most used front-end language on the webb. So if i would make a highly interactive webbpage i would choose react, and javascript as tools. On the other hand if i would need to use alot of back-end programming i would choose ASP.Net and blazor which is more usefull for server-side applications, and ASP.net offers more security.
 
+    
     
 1.  **Resources**
 
