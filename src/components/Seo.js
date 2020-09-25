@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
 export const Seo = ({ description, keywords, title, image, url, author }) => {
-  const site = "yoururl.netlify.app"
+  const site = "https://viktor-johansson-webbapplikationer-och-mobil-utveckling.netlify.app"
 
   return (
     <StaticQuery

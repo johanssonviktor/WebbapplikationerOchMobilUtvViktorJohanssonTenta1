@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "My Travel Blog",
     description: "A simple blog built with Gatsby and MDX",
-    url: "https://your-site.netlify.app/",
+    url: "https://viktor-johansson-webbapplikationer-och-mobil-utveckling.netlify.app",
     image:
       "",
     twitterUsername: "",
