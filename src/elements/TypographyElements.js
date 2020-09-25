@@ -114,6 +114,8 @@ export const H2 = styled.h2`
     }
   }};
   font-weight: 400;
+  font-family: ${props => props.theme.fonts.headings};
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
+  font-style: normal;
 `

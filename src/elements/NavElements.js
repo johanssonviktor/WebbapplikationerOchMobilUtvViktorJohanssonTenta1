@@ -31,21 +31,28 @@ export const Ul = styled.ul`
   flex-flow: row nowrap;
   font-size: 1.5rem;
   padding: 0 4rem;
+  font-family: ${props => props.theme.fonts.headings};
 
   li {
     padding: 18px 10px;
     color: ${props => props.theme.colors.whiteopacity};
-  }
+    cursor: pointer;
 
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: ${props => props.theme.colors.main3};
+    }
+  }
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 8;
     flex-flow: column nowrap;
     background-color: ${props => props.theme.colors.main3};
-    position: fixed; 
+    position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
-    right: 0; 
+    right: 0;
     height: 100vh;
     width: 100%;
     padding-top: 3.5rem;
@@ -66,7 +73,7 @@ export const StyledBurger = styled.div`
   height: 2rem;
   position: fixed;
   top: 15px;
-  right: 20px; 
+  right: 20px;
   z-index: 30;
   display: none;
 
@@ -99,4 +106,3 @@ export const StyledBurger = styled.div`
     }
   }
 `
-
